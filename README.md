@@ -9,8 +9,9 @@ SignalRoom runs locally on the presenter's Windows computer. The public beta
 does not request microphone access, retain meeting video, upload participant
 frames, or create identity profiles.
 
-Visit the [SignalRoom website](https://signalroom-live.tigerrabbit.chatgpt.site)
-for the product guide, research evidence, and privacy details.
+The marketing website is temporarily offline while its design is reviewed.
+Current downloads, checksums, privacy information, and usage instructions
+remain available in this repository.
 
 ## Download
 
