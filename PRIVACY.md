@@ -1,6 +1,6 @@
 # SignalRoom Privacy
 
-Last reviewed: July 26, 2026
+Last reviewed: July 28, 2026
 
 SignalRoom processes the Zoom window selected by the presenter on that
 presenter's Windows computer.
@@ -15,13 +15,21 @@ SignalRoom does not request or capture microphone audio.
 
 ## Data Stored
 
-The public beta stores a local session summary and timeline. These files may
+SignalRoom stores a local session summary and timeline. These files may
 contain timestamps, temporary participant keys, estimated states, confidence
 values, visible-face counts, bounding-box locations, room percentages,
 presenter actions, and local performance diagnostics.
 
-The public beta does not retain meeting video. It does not create participant
-identity profiles.
+Live-session video is not retained unless the user explicitly turns on local
+replay before starting the session. Replay is video-only and off by default.
+The option resets to off for every new session.
+
+When the user chooses an MP4 or WebM recording for background analysis, that
+recording is copied into the current Windows user's local SignalRoom data
+folder. Any audio already present in an uploaded recording remains part of the
+local source file but is not analyzed.
+
+SignalRoom does not create participant identity profiles.
 
 ## Data Sharing
 
@@ -31,9 +39,10 @@ user chooses to share it.
 
 ## Retention
 
-Reports remain in the current Windows user's local SignalRoom application-data
-folder until that user deletes them. Uninstalling SignalRoom does not
-automatically delete prior reports.
+Reports, optional replay videos, and uploaded recordings remain in the current
+Windows user's local SignalRoom application-data folder until that user
+deletes them. Uninstalling SignalRoom does not automatically delete prior
+session data.
 
 ## Responsible Use
 

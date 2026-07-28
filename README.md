@@ -5,9 +5,9 @@ cues during a Zoom session. It separates highly engaged, following, confused,
 and attention-drift signals, then summarizes the room into a suggested
 presenter response.
 
-SignalRoom runs locally on the presenter's Windows computer. The public beta
-does not request microphone access, retain meeting video, upload participant
-frames, or create identity profiles.
+SignalRoom runs locally on the presenter's Windows computer. It does not
+request microphone access, upload participant frames, or create identity
+profiles. Live replay is optional, video-only, and off by default.
 
 The marketing website is temporarily offline while its design is reviewed.
 Current downloads, checksums, privacy information, and usage instructions
@@ -16,7 +16,7 @@ remain available in this repository.
 ## Download
 
 The current release is
-[SignalRoom 0.1.0-beta.1](https://github.com/CodingIsCool666/signalroom/releases/tag/v0.1.0-beta.1)
+[SignalRoom 0.1.0-beta.2](https://github.com/CodingIsCool666/signalroom/releases/tag/v0.1.0-beta.2)
 for 64-bit Windows 10 and Windows 11.
 
 - Use the installer for the normal setup experience.
@@ -37,6 +37,14 @@ warning. Confirm the published checksum before continuing.
 
 The browser asks for screen-sharing permission for every session. SignalRoom
 cannot select the Zoom window automatically.
+
+To review the session beside its timeline, turn on **Save a local replay**
+before starting. This stores video from the selected window on the same
+computer. The option returns to off for each new session.
+
+SignalRoom can also analyze an MP4 or WebM meeting recording in the
+background. The application must remain open while analysis runs. The
+recording and generated report remain local.
 
 ## Interpretation
 
@@ -76,3 +84,6 @@ This repository currently hosts public beta packages and user documentation.
 The research source and participant data remain private during beta testing.
 
 Read [PRIVACY.md](PRIVACY.md) before using SignalRoom with participants.
+
+The previous [0.1.0-beta.1 release](https://github.com/CodingIsCool666/signalroom/releases/tag/v0.1.0-beta.1)
+remains available as a rollback package without recording analysis or replay.
