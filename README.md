@@ -12,7 +12,7 @@ profiles.
 ## Download
 
 The current public beta is
-[ATTENTRIX 0.2.0 Beta 1](https://github.com/CodingIsCool666/attentrix/releases/tag/v0.2.0-beta.1)
+[ATTENTRIX 0.2.0 Beta 2](https://github.com/CodingIsCool666/attentrix/releases/tag/v0.2.0-beta.2)
 for 64-bit Windows 10 and Windows 11.
 
 - Use the installer for the normal Windows setup.
@@ -23,20 +23,20 @@ This beta is not code-signed. Windows may display an unrecognized-app warning.
 Check the SHA-256 value before running the installer:
 
 ```text
-150cbef841e24c23cd0955b8a14ee83f9983329c928d5a4ea864b833c5935466  ATTENTRIX-Setup-0.2.0-beta.1-x64.exe
-80298ba63bde9a4299edee72c7ce59399b132dce53aa7a2dc0eeb90886166b74  ATTENTRIX-Windows-x64-0.2.0-beta.1.zip
+5c34d934125829b6eae5c7fc57cfd87e616d1b63ac7c17a9ba05a80cccc244af  ATTENTRIX-Setup-0.2.0-beta.2-x64.exe
+ebf47faf3f68ee3dcc36fd388cfcc40cfb1a6337d3e93a1183e7553493556b69  ATTENTRIX-Windows-x64-0.2.0-beta.2.zip
 ```
 
 The public
-[verification record](https://github.com/CodingIsCool666/attentrix/releases/download/v0.2.0-beta.1/verification_evidence.json)
+[verification record](https://github.com/CodingIsCool666/attentrix/releases/download/v0.2.0-beta.2/verification_evidence.json)
 binds the tested Windows workflows to those exact hashes. Publication also
 retrieved the installer, portable archive, checksum file, manifest, and
 verification record anonymously and matched every remote size and SHA-256.
 
-The release manifest records that this beta was built from a development
-snapshot with tracked changes. The hashes identify the distributed artifacts,
-but the recorded source commit alone cannot reproduce them. A future public
-build should be produced from a clean source commit.
+Beta 2 replaces Beta 1, which omitted the `narwhals.stable.v2` runtime
+dependency required by scikit-learn during Zoom analysis. Beta 2 was built from
+clean source commit `c8e923a6b9054a057b3d33eb40a1beefe0103fe5` and includes
+the official ATTENTRIX emblem across the application and Windows packages.
 
 ## Live Sessions
 

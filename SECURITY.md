@@ -16,5 +16,5 @@ Security fixes are currently provided for the latest ATTENTRIX public beta.
 ## Release Verification
 
 Every release publishes SHA-256 checksums beside the installer and portable
-archive. ATTENTRIX 0.2.0 Beta 1 is not code-signed, so verify its checksum
+archive. ATTENTRIX 0.2.0 Beta 2 is not code-signed, so verify its checksum
 before running it. A later signed build will be identified by a new release.
