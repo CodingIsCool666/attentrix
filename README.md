@@ -27,6 +27,17 @@ Check the SHA-256 value before running the installer:
 80298ba63bde9a4299edee72c7ce59399b132dce53aa7a2dc0eeb90886166b74  ATTENTRIX-Windows-x64-0.2.0-beta.1.zip
 ```
 
+The public
+[verification record](https://github.com/CodingIsCool666/attentrix/releases/download/v0.2.0-beta.1/verification_evidence.json)
+binds the tested Windows workflows to those exact hashes. Publication also
+retrieved the installer, portable archive, checksum file, manifest, and
+verification record anonymously and matched every remote size and SHA-256.
+
+The release manifest records that this beta was built from a development
+snapshot with tracked changes. The hashes identify the distributed artifacts,
+but the recorded source commit alone cannot reproduce them. A future public
+build should be produced from a clean source commit.
+
 ## Live Sessions
 
 1. Open Zoom and switch to Gallery View.
