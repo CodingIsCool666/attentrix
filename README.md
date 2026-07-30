@@ -1,89 +1,85 @@
-# SignalRoom
+# ATTENTRIX
 
-SignalRoom gives a presenter a calm, second-screen view of visible audience
-cues during a Zoom session. It separates highly engaged, following, confused,
-and attention-drift signals, then summarizes the room into a suggested
-presenter response.
+ATTENTRIX gives presenters a second-screen view of visible audience cues during
+Zoom sessions. It tracks highly engaged, following, confused, and
+attention-drift signals for each visible participant, then summarizes the room
+into a suggested response.
 
-SignalRoom runs locally on the presenter's Windows computer. It does not
-request microphone access, upload participant frames, or create identity
-profiles. Live replay is optional, video-only, and off by default.
-
-The marketing website is temporarily offline while its design is reviewed.
-Current downloads, checksums, privacy information, and usage instructions
-remain available in this repository.
+The application runs locally on the presenter's computer. It does not request
+microphone access, upload meeting frames, or create participant identity
+profiles.
 
 ## Download
 
-The current release is
-[SignalRoom 0.1.0-beta.2](https://github.com/CodingIsCool666/signalroom/releases/tag/v0.1.0-beta.2)
+The current public beta is
+[ATTENTRIX 0.2.0 Beta 1](https://github.com/CodingIsCool666/attentrix/releases/tag/v0.2.0-beta.1)
 for 64-bit Windows 10 and Windows 11.
 
-- Use the installer for the normal setup experience.
-- Use the portable ZIP when you cannot install applications.
-- Verify the downloaded file against `SHA256SUMS.txt`.
+- Use the installer for the normal Windows setup.
+- Use the portable ZIP when applications cannot be installed.
+- Verify either package against the published `SHA256SUMS.txt`.
 
-The beta is not code-signed, so Windows may display an unrecognized-app
-warning. Confirm the published checksum before continuing.
+This beta is not code-signed. Windows may display an unrecognized-app warning.
+Check the SHA-256 value before running the installer:
 
-## Use
+```text
+150cbef841e24c23cd0955b8a14ee83f9983329c928d5a4ea864b833c5935466  ATTENTRIX-Setup-0.2.0-beta.1-x64.exe
+80298ba63bde9a4299edee72c7ce59399b132dce53aa7a2dc0eeb90886166b74  ATTENTRIX-Windows-x64-0.2.0-beta.1.zip
+```
+
+## Live Sessions
 
 1. Open Zoom and switch to Gallery View.
-2. Open SignalRoom and select **Start a session**.
+2. Open ATTENTRIX and select **Start a session**.
 3. Read and accept the responsible-use notice.
 4. Select the Zoom window in the browser sharing menu.
-5. Frame the visible participant gallery and start the live view.
-6. Keep SignalRoom on a second monitor or beside Zoom.
+5. Frame the visible gallery and begin analysis.
+6. Keep ATTENTRIX beside Zoom or on a second monitor.
 
-The browser asks for screen-sharing permission for every session. SignalRoom
+The browser asks for screen-sharing permission for each session. ATTENTRIX
 cannot select the Zoom window automatically.
 
-To review the session beside its timeline, turn on **Save a local replay**
-before starting. This stores video from the selected window on the same
-computer. The option returns to off for each new session.
+## Saved Meetings And Replay
 
-SignalRoom can also analyze an MP4 or WebM meeting recording in the
-background. The application must remain open while analysis runs. The
-recording and generated report remain local.
+ATTENTRIX can analyze an MP4 or WebM meeting in the background and replay the
+video beside its synchronized room timeline. A live session can also be saved
+for replay when the presenter enables the option before recording. Live replay
+is off by default.
+
+Selected and recorded videos remain in the current user's local ATTENTRIX data
+folder. The model does not analyze audio.
 
 ## Interpretation
-
-SignalRoom estimates visible behavioral cues. It does not know a participant's
-thoughts, intent, effort, understanding, or learning outcome.
 
 - **Highly engaged:** especially strong visible attention cues.
 - **Following:** steady visible attention cues.
 - **Confused:** uncertainty cues while oriented to the session.
 - **Attention drift:** sustained cues that attention may be elsewhere.
 
-Use the output as a prompt to observe, ask, or adjust. Do not use SignalRoom
-for grading, discipline, attendance, employment decisions, or covert
+These are uncertain behavioral estimates. They do not reveal a person's
+thoughts, intent, effort, understanding, or learning outcome. Do not use
+ATTENTRIX for grading, discipline, attendance, employment decisions, or covert
 surveillance.
 
-## Evidence
+## Current Evidence
 
-On one frozen three-person Zoom holdout with recording-level phase labels, the
-selected participant policy reached person-level macro-F1 `0.751` and accuracy
-`0.778`. Room-level presenter-action macro-F1 was `0.851`.
+On one frozen three-person Zoom holdout with broad phase labels, the selected
+participant policy reached person-level macro-F1 `0.751` and accuracy `0.778`.
+Room-level presenter-action macro-F1 was `0.851`.
 
 The selected compute profile preserved presenter outputs exactly across eight
-final paired replay trials while reducing backend analysis time by a
-source-mean `11.41%`, with a 95% bootstrap interval of `8.11%` to `14.71%`.
+paired replay trials while reducing backend analysis time by a source-mean
+`11.41%`, with a 95% bootstrap interval of `8.11%` to `14.71%`.
 
-These results are local research evidence, not a universal classroom accuracy
-claim.
+These are local research results, not a universal classroom accuracy claim.
 
 ## Scope
 
-Version 0.1 analyzes one visible Zoom Gallery View with up to 49 rendered
-participants. It cannot analyze participants on another gallery page, cameras
-that are off, or faces that are fully hidden. Eye gaze is not included in this
-release.
+Version 0.2 analyzes one visible Zoom Gallery View with up to 49 rendered
+participants. It cannot analyze cameras that are off, fully hidden faces, or
+participants on another gallery page. Eye gaze is not included in this release.
 
-This repository currently hosts public beta packages and user documentation.
-The research source and participant data remain private during beta testing.
+This repository contains public beta packages and user documentation only. The
+research source, datasets, and participant recordings remain private.
 
-Read [PRIVACY.md](PRIVACY.md) before using SignalRoom with participants.
-
-The previous [0.1.0-beta.1 release](https://github.com/CodingIsCool666/signalroom/releases/tag/v0.1.0-beta.1)
-remains available as a rollback package without recording analysis or replay.
+Read [PRIVACY.md](PRIVACY.md) before using ATTENTRIX with participants.

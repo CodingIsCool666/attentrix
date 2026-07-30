@@ -1,56 +1,49 @@
-# SignalRoom Privacy
+# ATTENTRIX Privacy
 
-Last reviewed: July 28, 2026
+Last reviewed: July 30, 2026
 
-SignalRoom processes the Zoom window selected by the presenter on that
-presenter's Windows computer.
+ATTENTRIX processes the Zoom window or saved meeting selected by the presenter
+on that presenter's computer.
 
 ## Data Used
 
-SignalRoom receives frames through the browser's screen-sharing prompt. It
-extracts temporary face locations, facial landmarks, head and posture cues,
-motion measurements, and model confidence values.
-
-SignalRoom does not request or capture microphone audio.
+ATTENTRIX extracts temporary face locations, facial landmarks, head and posture
+cues, motion measurements, and model confidence values from selected video
+frames. It does not request or capture microphone audio.
 
 ## Data Stored
 
-SignalRoom stores a local session summary and timeline. These files may
-contain timestamps, temporary participant keys, estimated states, confidence
-values, visible-face counts, bounding-box locations, room percentages,
-presenter actions, and local performance diagnostics.
+ATTENTRIX stores local session summaries and timelines. These files may contain
+timestamps, temporary participant keys, estimated states, confidence values,
+visible-face counts, bounding boxes, room percentages, suggested presenter
+actions, and local performance measurements.
 
-Live-session video is not retained unless the user explicitly turns on local
-replay before starting the session. Replay is video-only and off by default.
-The option resets to off for every new session.
+Live replay is off by default. When a presenter enables replay before a live
+session, ATTENTRIX stores the selected-window video locally. A saved meeting
+chosen for analysis is copied into the local session folder so it can be
+replayed beside the timeline.
 
-When the user chooses an MP4 or WebM recording for background analysis, that
-recording is copied into the current Windows user's local SignalRoom data
-folder. Any audio already present in an uploaded recording remains part of the
-local source file but is not analyzed.
-
-SignalRoom does not create participant identity profiles.
+ATTENTRIX does not create participant identity profiles.
 
 ## Data Sharing
 
-SignalRoom does not upload meeting frames, reports, or participant data to a
-SignalRoom cloud service. An exported report leaves the device only when the
-user chooses to share it.
+ATTENTRIX does not upload meeting frames, recordings, reports, or participant
+data to an ATTENTRIX cloud service. An exported report leaves the computer only
+when the user chooses to share it.
 
 ## Retention
 
-Reports, optional replay videos, and uploaded recordings remain in the current
-Windows user's local SignalRoom application-data folder until that user
-deletes them. Uninstalling SignalRoom does not automatically delete prior
-session data.
+Reports and retained recordings remain in the current user's local ATTENTRIX
+application-data folder until that user deletes them. Uninstalling ATTENTRIX
+does not automatically delete prior reports or recordings.
 
 ## Responsible Use
 
-Tell participants that SignalRoom is being used and obtain appropriate consent.
-The states are uncertain behavioral estimates. Do not use them as evidence of
-a person's intent, ability, character, or learning outcome. Do not use
-SignalRoom for grading, discipline, attendance, employment decisions, or
-covert surveillance.
+Tell participants that ATTENTRIX is being used and obtain appropriate consent.
+The states are uncertain behavioral estimates. Do not use them as evidence of a
+person's intent, ability, character, or learning outcome. Do not use ATTENTRIX
+for grading, discipline, attendance, employment decisions, or covert
+surveillance.
 
-Eye gaze is not enabled in version 0.1. A future optional gaze module would
+Eye gaze is not enabled in version 0.2. A future optional gaze module will
 receive a new version number and an updated privacy notice.
